@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://localhost:49506/8ee4ea609a6346c4cf34c2b621ac79ba.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guestbots- create a bot</title>
+    <meta name="description" content="Guestbots- property management has never been easier.">
+    <meta name="keywords" content="">
+    <meta name="author" content="Michael Currier">
+    <!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Owl Carousel Min-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+    <!-- Google Fonts "%7C" replaces "|" for  validation -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+
+
+
+
+
+
+        <div id="contact"></div>
+
+        <h1 class="text-center mt-5">New property</h1>
+        <hr class="title-underline mb-0 mt-3">
+<div class="jumbotron container row">
+    <div class="d-md-block col-md-1"></div>
+
+    
+
+
+    <div class="col-md-11 pt-5 pt-md-3 my-auto text-center">
+        <h4 class="text-dark pb-4">Please fill in the necessary information from your new listing after completing your payment for your new property. <br><br>
+        You will need to pay for your subscription in order for your Guestbots to work. <br></h4>
+    <a target="_blank" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-3TG73856XK7789901MS65XEY"><h3 class="text-dark pb-4"><strong><i>Click here to set up your subscription,</i></strong></h3></a> <h4 class="text-dark pb-4"> then return to this form and provide the following information:<br><i>(all fields are required unless specified otherwise)</i></h4>
+        <hr class="pb-4">
+        <!-- Start Contact Form -->
+        <form id="contact-form" method="POST" enctype="text/plain" action="./contact/contact.php">
+
+            <div class="messages"></div>
+            <div class="controls">
+
+                <div class="row">  
+                    <div class="col-md-4">
+                        <h3 class="text-left">Your PayPal email:</h3>
+                    </div>
+                    <div class="form-group col-md-8">
+                        <input id="form_paypal" type="email" name="form_paypal" class="form-control"
+                        placeholder="Enter your PayPal email." required="required">
+                    </div>
+                </div>
+                <hr class="pb-4">
+
+                <div class="row">  
+                    <div class="col-md-4">
+                        <h3 class="text-left">Your phone number:</h3>
+                    </div>
+                    <div class="form-group col-md-8">
+                        <input id="form_phone" type="phone" name="form_phone" class="form-control"
+                        placeholder="Enter your number." required="required">
+                    </div>
+                </div>
+                <hr class="pb-2">
+                
+                <h1 class="text-center col-12 text-dark pb-2"><i>Property info:</i></h1>
+                <hr class="pb-4">
+
+                <div class="row">  
+                    <div class="col-md-5">
+                        <h3 class="text-left">Internal name (nickname):</h3>
+                        <p class="text-left"><i>This is the name you use to informally identify your property.</i></p>
+                    </div>
+                    <div class="form-group col-md-7">
+                        <textarea id="form_int_name" type="text" name="form_int_name" class="form-control"
+                        placeholder="Enter property's internal name." rows="3" required="required"></textarea>
+                    </div>
+                </div>
+                <hr class="pb-4">
+
+                <div class="row">  
+                    <div class="col-md-5">
+                        <h3 class="text-left">Airbnb property link:</h3>
+                        <p class="text-left"><i>Your Airbnb property link is found by viewing your listing as a guest.</i></p>
+                    </div>
+                    <div class="form-group col-md-7">
+                        <textarea id="form_link" type="text" name="form_link" class="form-control"
+                        placeholder="ex.- https://www.airbnb.com/rooms/[AirbnbpropertyID]" rows="3" required="required"></textarea>
+                    </div>
+                </div>
+                <hr class="pb-4">
+
+                <div class="row">  
+                    <div class="col-md-5">
+                        <h3 class="text-left">Check-in instructions:</h3>
+                        <p class="text-left"><i>Please copy and paste your exact check-in instructions sent to guests for your property.</i></p>
+                    </div>
+                    <div class="form-group col-md-7">
+                        <textarea id="form_instructions" type="text" name="form_instructions" class="form-control"
+                        placeholder="Paste your check-in instructions here." rows="3" required="required"></textarea>
+                    </div>
+                </div>
+                <hr class="pb-4">
+
+                <div class="row">  
+                    <div class="col-md-5">
+                        <h3 class="text-left">Do you allow pets?</h3>
+                        <p class="text-left"><i>Please enter either "Yes." if you allow pets. If not, please enter "No."</i></p>
+                    </div>
+                    <div class="form-group col-md-7">
+                        <textarea id="form_pets" type="text" name="form_pets" class="form-control"
+                        placeholder="Enter your pet status here." rows="3" required="required"></textarea>
+                    </div>
+                </div>
+                <hr class="pb-4">
+
+                <div class="row">  
+                    <div class="col-md-5">
+                        <h3 class="text-left">What is your pet fee?</h3>
+                        <p class="text-left"><i>If pets are not allowed, please skip this.</i></p>
+                    </div>
+                    <div class="form-group col-md-7">
+                        <textarea id="form_pet_fee" type="text" name="form_pet_fee" class="form-control"
+                        placeholder="If pets are allowed, enter your pet fee here." rows="3"></textarea>
+                    </div>
+                </div>
+
+                <hr class="pb-2">
+                
+                <h1 class="text-center col-12 text-dark pb-2"><i>Additional info (optional):</i></h1>
+                <hr class="pb-4">
+
+                <div class="row">  
+                    <div class="col-md-12">
+                        <p class="lead text-center pb-4">Please tell us any unique quirks or tips for your Guestbots to memorize about your home. <br><br>
+                            Guestbots will quickly memorize everything from your listing, please feel free to provide additional tips. <br><br>Here are some guest questions to think about before providing additional information:</p>
+
+                            <h5 class="text-dark text-center">
+                                <ul class="suggestions">
+                                    <li><i>Is this a Duplex?</i></li>
+                                    <li><i>Do you have pool/spa jets?</i></li>
+                                    <li><i>Where is the washer/dryer?</i></li>
+                                    <li><i>Where is the wi-fi router?</i></li>
+                                    <li><i>"Can I park my _____ at your home?"</i></li>
+                                    <li><i>"How do I turn on the _____?"</i></li>
+                                    <li><i>"Where is the _____?"</i></li>
+                                </ul>
+                            </h5>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <textarea id="form_info" type="text" name="form_info" class="form-control"
+                        placeholder="Enter any additional info about your property here." rows="8"></textarea>
+                    </div>
+                </div>
+
+                <hr class="pb-4">
+
+                
+                <input type="submit" class="btn btn-dark btn-lg" value="Create bot">
+            </div> <!-- End Controls -->
+
+        </form> <!-- End Contact Form -->
+
+    </div> <!-- End Column -->
+    
+</div>
+
+
+
+
+
+
+<!-- Start Footer -->
+
+ <footer>
+           
+        </footer> <!-- End Footer -->
+
+    </div> <!-- End Contact Section -->
+
+
+    <!-- End Top Scroll -->
+
+    <!-- Script Source Files -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="js/all.min.js"></script>
+    <!-- Universal Parallax -->
+    <script src="js/universal-parallax.min.js"></script>
+    <!-- Parallax Plugin Speed Setting (don't move) -->
+    <script>
+        new universalParallax().init({
+            speed: 4
+        });
+    </script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Counter Up -->
+    <script src="js/jquery.counterup.js"></script>
+    <!-- Owl Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Isotope Filtering -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Form Validator -->
+    <script src="js/validator.min.js"></script>
+    <!-- Plugins.js -->
+    <script src="js/plugins.js"></script>
+
+    <!-- End Script Source Files -->
+
+</body>
+</html>
